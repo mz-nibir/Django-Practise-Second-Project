@@ -21,7 +21,7 @@
         <a class="nav-link" href="{% url 'Login_app:index' %}">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Add something </a>
+        <a class="nav-link" href="{% url 'Login_app:register' %}">Register </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Add Another </a>
@@ -30,7 +30,7 @@
   </nav>
 
 
-    <div class="container">
+    <div class="container pt-3">
 
       {% block body_block %}
 
