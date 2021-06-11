@@ -29,7 +29,7 @@ def user_login(request):
             return HttpResponse('Login Details are worng')
 
     else:
-        return render(request,'Login_app/login.html', context={})
+        return HttpResponseRedirect(reverse('Login_app:login'))
 
 def index(request):
     dict={}
