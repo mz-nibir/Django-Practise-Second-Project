@@ -31,6 +31,11 @@ def user_login(request):
     else:
         return HttpResponseRedirect(reverse('Login_app:login'))
 
+@login_required
+def user_logout(request):
+    logout(request)
+    return HttpResponseRedirect(reverse('Login_app:index'))
+
 def index(request):
     dict={}
     return render(request,'Login_app/index.html', context=dict)
